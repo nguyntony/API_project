@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 html {
     font-size: 62.5%;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(230, 226, 205)
 }
 
 @import "maincontent";
 @import "button";
+@import "animation";
+@import "mediaquery";

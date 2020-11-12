@@ -1,10 +1,33 @@
 .btn-container {
     display: flex;
-    justify-content: center;
-}
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(60, 38, 89);
+
+    #logo {
+        margin: 10px 2rem;
+        // transform: translateX(500%);
+        // transform: translateY(50vh);
+        img {
+                width: 19rem;
+                // transform: scale(2, 2);
+            }
+    }
+} 
 
 #add {
     font-size: 2rem;
-    padding: 10px;
-    margin: 20px;
+    padding: 7px;
+    margin: 10px;
+    background-color: rgb(98, 148, 204);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+#add:focus {
+    outline: none;
 }

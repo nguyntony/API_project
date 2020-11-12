@@ -5,6 +5,8 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Bebas Neue', cursive;
+  background-color: #e6e2cd;
 }
 
 .main-content {
@@ -17,50 +19,168 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #e6e2cd;
 }
 
 .main-content .card {
-  border: 1px solid black;
+  color: #62b7bd;
+  border: 2px solid #7fc464;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 10px 8px #4f4f4f;
+          box-shadow: 5px 10px 8px #4f4f4f;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   max-width: 250px;
-  margin: 5px;
+  margin: .5rem 1rem;
   position: relative;
+  -webkit-transition: opacity 1500ms;
+  transition: opacity 1500ms;
+  will-change: opacity;
+  background-color: #4d3f61;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d3f61), color-stop(50%, #4d3f61), color-stop(50%, #655280), to(#655280));
+  background: linear-gradient(to bottom, #4d3f61 0%, #4d3f61 50%, #655280 50%, #655280 100%);
 }
 
 .main-content .card h2 {
-  font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
   font-weight: 300;
+  text-align: center;
+  margin: 10px;
+  margin-top: 4rem;
+}
+
+.main-content .card h3 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #77ad77;
 }
 
 .main-content .card .close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
+  top: 0px;
+  right: 10px;
+  color: #c46464;
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  cursor: pointer;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 .main-content .card img {
   width: 250px;
+  margin-bottom: 1rem;
+}
+
+.card.faded-out {
+  opacity: 0;
+}
+
+.img-container {
+  width: 100vw;
+  height: 90vh;
+  background-color: #6c6c6c;
+}
+
+.img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  margin: 3rem;
+  background-color: #b6b19b;
+  width: 95%;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
 }
 
 .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #3c2659;
+}
+
+.btn-container #logo {
+  margin: 10px 2rem;
+}
+
+.btn-container #logo img {
+  width: 19rem;
+}
+
+#add {
+  font-size: 2rem;
+  padding: 7px;
+  margin: 10px;
+  background-color: #6294cc;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+#add:focus {
+  outline: none;
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 20000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#add {
-  font-size: 2rem;
-  padding: 10px;
-  margin: 20px;
+.intro .landingimg {
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .landingimg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 /*# sourceMappingURL=styles.css.map */

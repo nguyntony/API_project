@@ -10,15 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="btn-container">
+        <div id="logo">
+            <img src="./styles/images/logo.png" alt="" class="logo-img">
+        </div>
+        <button id="add">Add a Character!</button>
+    </nav>
 
-    <div class="btn-container">
-        <button id="add">Add a character!</button>
+    <section class="main-content">
+        <div class="img-container">
+            <img src="./styles/images/rickandmorty.png" alt="">
+        </div>
+        <div id="card-holder"></div>
+    </section>
+
+    <div class="intro">
+        <div class="landingimg">
+            <img src="./styles/images/landingimg.png" alt="" class="portal">
+        </div>
     </div>
 
-    <section class="main-content"></section>
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
     <script src="main.js" type="module"></script>
 </body>
 
