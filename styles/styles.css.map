@@ -5,8 +5,7 @@
         "styles.scss",
         "_maincontent.scss",
         "_button.scss",
-        "_animation.scss",
-        "_mediaquery.scss"
+        "_animation.scss"
     ],
     "names": [],
     "file": "styles.css"
